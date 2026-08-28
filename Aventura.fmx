@@ -1,0 +1,52 @@
+object frmAventura: TfrmAventura
+  Caption = 'Destino 92 - Aventura'
+  ClientHeight = 640
+  ClientWidth = 360
+  object lblFecha: TLabel
+    Position.X = 15.000000000000000000
+    Position.Y = 15.000000000000000000
+    Size.Width = 160.000000000000000000
+    Size.Height = 24.000000000000000000
+    Text = 'FECHA'
+  end
+  object lblLugar: TLabel
+    Position.X = 185.000000000000000000
+    Position.Y = 15.000000000000000000
+    Size.Width = 160.000000000000000000
+    Size.Height = 24.000000000000000000
+    Text = 'LUGAR'
+    TextSettings.HorzAlign = Trailing
+  end
+  object lblImagen: TLabel
+    Position.X = 15.000000000000000000
+    Position.Y = 55.000000000000000000
+    Size.Width = 330.000000000000000000
+    Size.Height = 190.000000000000000000
+    Text = '[DIBUJO DE LA ESCENA]'
+    TextSettings.HorzAlign = Center
+    TextSettings.VertAlign = Center
+  end
+  object memHistoria: TMemo
+    Position.X = 15.000000000000000000
+    Position.Y = 260.000000000000000000
+    Size.Width = 205.000000000000000000
+    Size.Height = 335.000000000000000000
+    ReadOnly = True
+  end
+  object btnOpcion1: TButton
+    Position.X = 235.000000000000000000
+    Position.Y = 300.000000000000000000
+    Size.Width = 110.000000000000000000
+    Size.Height = 46.000000000000000000
+    Text = 'OPCION 1'
+    OnClick = btnOpcion1Click
+  end
+  object btnOpcion2: TButton
+    Position.X = 235.000000000000000000
+    Position.Y = 365.000000000000000000
+    Size.Width = 110.000000000000000000
+    Size.Height = 46.000000000000000000
+    Text = 'OPCION 2'
+    OnClick = btnOpcion2Click
+  end
+end

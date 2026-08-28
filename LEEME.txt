@@ -1,0 +1,12 @@
+DESTINO 92 - PROTOTIPO DELPHI 12.1 FIREMONKEY
+
+Version con textos sin acentos para evitar problemas de codificacion.
+Los botones se colocan a la derecha y con menor tamano.
+
+PRUEBA RECOMENDADA:
+1. Abrir Destino92.dpr en Delphi 12.1.
+2. Compilar primero para Windows.
+3. Probar las rutas de la aventura.
+4. Despues anadir Android como Target Platform y generar el APK.
+
+Los dibujos siguen como marcadores de texto. Se anadiran cuando la navegacion quede comprobada.

@@ -1,0 +1,37 @@
+object frmFinal: TfrmFinal
+  Caption = 'Destino 92 - Final'
+  ClientHeight = 640
+  ClientWidth = 360
+  object lblTituloFinal: TLabel
+    Position.X = 20.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 325.000000000000000000
+    Size.Height = 60.000000000000000000
+    Text = 'FINAL'
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.HorzAlign = Center
+  end
+  object memFinal: TMemo
+    Position.X = 20.000000000000000000
+    Position.Y = 165.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 300.000000000000000000
+    ReadOnly = True
+  end
+  object btnReiniciar: TButton
+    Position.X = 235.000000000000000000
+    Position.Y = 220.000000000000000000
+    Size.Width = 110.000000000000000000
+    Size.Height = 46.000000000000000000
+    Text = 'JUGAR OTRA VEZ'
+    OnClick = btnReiniciarClick
+  end
+  object btnMenu: TButton
+    Position.X = 235.000000000000000000
+    Position.Y = 285.000000000000000000
+    Size.Width = 110.000000000000000000
+    Size.Height = 46.000000000000000000
+    Text = 'MENU'
+    OnClick = btnMenuClick
+  end
+end

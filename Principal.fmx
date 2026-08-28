@@ -1,0 +1,38 @@
+object frmPrincipal: TfrmPrincipal
+  Caption = 'Destino 92'
+  ClientHeight = 640
+  ClientWidth = 360
+  object lblTitulo: TLabel
+    Position.X = 30.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 50.000000000000000000
+    Text = 'DESTINO 92'
+    TextSettings.Font.Size = 28.000000000000000000
+    TextSettings.HorzAlign = Center
+  end
+  object lblSubtitulo: TLabel
+    Position.X = 30.000000000000000000
+    Position.Y = 180.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 40.000000000000000000
+    Text = 'Una aventura a traves del tiempo'
+    TextSettings.HorzAlign = Center
+  end
+  object btnComenzar: TButton
+    Position.X = 225.000000000000000000
+    Position.Y = 300.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 46.000000000000000000
+    Text = 'COMENZAR'
+    OnClick = btnComenzarClick
+  end
+  object btnSalir: TButton
+    Position.X = 225.000000000000000000
+    Position.Y = 365.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 46.000000000000000000
+    Text = 'SALIR'
+    OnClick = btnSalirClick
+  end
+end
