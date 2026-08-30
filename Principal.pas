@@ -3,9 +3,9 @@ unit Principal;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.StdCtrls,
-  FMX.Controls.Presentation, FMX.Objects;
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.StdCtrls, FMX.Controls.Presentation, Aventura;
 
 type
   TfrmPrincipal = class(TForm)
@@ -24,11 +24,9 @@ implementation
 
 {$R *.fmx}
 
-uses Aventura;
-
 procedure TfrmPrincipal.btnComenzarClick(Sender: TObject);
 begin
-  frmAventura.IniciarAventura;
+  frmAventura.IniciarPartida;
   frmAventura.Show;
   Hide;
 end;

@@ -1,37 +1,42 @@
 object frmPrincipal: TfrmPrincipal
   Caption = 'Destino 92'
-  ClientHeight = 640
-  ClientWidth = 360
+  ClientHeight = 360
+  ClientWidth = 640
+  FormFactor.Width = 640
+  FormFactor.Height = 360
   object lblTitulo: TLabel
-    Position.X = 30.000000000000000000
-    Position.Y = 120.000000000000000000
-    Size.Width = 300.000000000000000000
-    Size.Height = 50.000000000000000000
+    Position.X = 40
+    Position.Y = 55
+    Size.Width = 360
+    Size.Height = 60
     Text = 'DESTINO 92'
-    TextSettings.Font.Size = 28.000000000000000000
+    TextSettings.Font.Size = 36
     TextSettings.HorzAlign = Center
   end
   object lblSubtitulo: TLabel
-    Position.X = 30.000000000000000000
-    Position.Y = 180.000000000000000000
-    Size.Width = 300.000000000000000000
-    Size.Height = 40.000000000000000000
+    Position.X = 40
+    Position.Y = 120
+    Size.Width = 360
+    Size.Height = 45
     Text = 'Una aventura a traves del tiempo'
+    TextSettings.Font.Size = 17
     TextSettings.HorzAlign = Center
   end
   object btnComenzar: TButton
-    Position.X = 225.000000000000000000
-    Position.Y = 300.000000000000000000
-    Size.Width = 120.000000000000000000
-    Size.Height = 46.000000000000000000
+    Position.X = 455
+    Position.Y = 205
+    Size.Width = 160
+    Size.Height = 48
+    Anchors = [akRight, akBottom]
     Text = 'COMENZAR'
     OnClick = btnComenzarClick
   end
   object btnSalir: TButton
-    Position.X = 225.000000000000000000
-    Position.Y = 365.000000000000000000
-    Size.Width = 120.000000000000000000
-    Size.Height = 46.000000000000000000
+    Position.X = 455
+    Position.Y = 265
+    Size.Width = 160
+    Size.Height = 48
+    Anchors = [akRight, akBottom]
     Text = 'SALIR'
     OnClick = btnSalirClick
   end

@@ -3,9 +3,9 @@ unit Final;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.StdCtrls,
-  FMX.Controls.Presentation, FMX.Memo, FMX.Memo.Types;
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.StdCtrls, FMX.Controls.Presentation, FMX.Memo, FMX.ScrollBox;
 
 type
   TfrmFinal = class(TForm)
@@ -15,8 +15,6 @@ type
     btnMenu: TButton;
     procedure btnReiniciarClick(Sender: TObject);
     procedure btnMenuClick(Sender: TObject);
-  public
-    procedure MostrarFinal(const ATitulo, ATexto: string);
   end;
 
 var
@@ -24,19 +22,13 @@ var
 
 implementation
 
+uses Principal, Aventura;
+
 {$R *.fmx}
-
-uses Aventura, Principal;
-
-procedure TfrmFinal.MostrarFinal(const ATitulo, ATexto: string);
-begin
-  lblTituloFinal.Text := ATitulo;
-  memFinal.Text := ATexto;
-end;
 
 procedure TfrmFinal.btnReiniciarClick(Sender: TObject);
 begin
-  frmAventura.IniciarAventura;
+  frmAventura.IniciarPartida;
   frmAventura.Show;
   Hide;
 end;

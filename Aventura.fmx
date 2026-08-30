@@ -1,52 +1,97 @@
 object frmAventura: TfrmAventura
   Caption = 'Destino 92 - Aventura'
-  ClientHeight = 640
-  ClientWidth = 360
-  object lblFecha: TLabel
-    Position.X = 15.000000000000000000
-    Position.Y = 15.000000000000000000
-    Size.Width = 160.000000000000000000
-    Size.Height = 24.000000000000000000
-    Text = 'FECHA'
-  end
+  ClientHeight = 360
+  ClientWidth = 640
+  FormFactor.Width = 640
+  FormFactor.Height = 360
+  OnCreate = FormCreate
   object lblLugar: TLabel
-    Position.X = 185.000000000000000000
-    Position.Y = 15.000000000000000000
-    Size.Width = 160.000000000000000000
-    Size.Height = 24.000000000000000000
-    Text = 'LUGAR'
+    Align = Top
+    Margins.Left = 12
+    Margins.Top = 6
+    Margins.Right = 12
+    Size.Height = 26
+    Text = 'MARBELLA'
+    TextSettings.Font.Size = 17
+  end
+  object lblFecha: TLabel
+    Position.X = 230
+    Position.Y = 6
+    Size.Width = 180
+    Size.Height = 26
+    Text = '2026'
+    TextSettings.Font.Size = 17
+    TextSettings.HorzAlign = Center
+  end
+  object lblEscena: TLabel
+    Position.X = 455
+    Position.Y = 6
+    Size.Width = 170
+    Size.Height = 26
+    Text = 'ESCENA 1'
+    TextSettings.Font.Size = 15
     TextSettings.HorzAlign = Trailing
   end
-  object lblImagen: TLabel
-    Position.X = 15.000000000000000000
-    Position.Y = 55.000000000000000000
-    Size.Width = 330.000000000000000000
-    Size.Height = 190.000000000000000000
-    Text = '[DIBUJO DE LA ESCENA]'
-    TextSettings.HorzAlign = Center
-    TextSettings.VertAlign = Center
-  end
   object memHistoria: TMemo
-    Position.X = 15.000000000000000000
-    Position.Y = 260.000000000000000000
-    Size.Width = 205.000000000000000000
-    Size.Height = 335.000000000000000000
+    Position.X = 10
+    Position.Y = 42
+    Size.Width = 410
+    Size.Height = 308
+    Anchors = [akLeft, akTop, akRight, akBottom]
     ReadOnly = True
+    WordWrap = True
+    TextSettings.Font.Size = 15
   end
   object btnOpcion1: TButton
-    Position.X = 235.000000000000000000
-    Position.Y = 300.000000000000000000
-    Size.Width = 110.000000000000000000
-    Size.Height = 46.000000000000000000
-    Text = 'OPCION 1'
+    Position.X = 435
+    Position.Y = 48
+    Size.Width = 195
+    Size.Height = 42
+    Anchors = [akTop, akRight]
+    Text = 'Opcion 1'
     OnClick = btnOpcion1Click
   end
   object btnOpcion2: TButton
-    Position.X = 235.000000000000000000
-    Position.Y = 365.000000000000000000
-    Size.Width = 110.000000000000000000
-    Size.Height = 46.000000000000000000
-    Text = 'OPCION 2'
+    Position.X = 435
+    Position.Y = 96
+    Size.Width = 195
+    Size.Height = 42
+    Anchors = [akTop, akRight]
+    Text = 'Opcion 2'
     OnClick = btnOpcion2Click
+  end
+  object btnOpcion3: TButton
+    Position.X = 435
+    Position.Y = 144
+    Size.Width = 195
+    Size.Height = 42
+    Anchors = [akTop, akRight]
+    Text = 'Opcion 3'
+    OnClick = btnOpcion3Click
+  end
+  object lblInventario: TLabel
+    Position.X = 435
+    Position.Y = 198
+    Size.Width = 195
+    Size.Height = 24
+    Anchors = [akTop, akRight]
+    Text = 'INVENTARIO'
+    TextSettings.Font.Size = 14
+  end
+  object lstInventario: TListBox
+    Position.X = 435
+    Position.Y = 224
+    Size.Width = 195
+    Size.Height = 78
+    Anchors = [akTop, akRight, akBottom]
+  end
+  object btnMenu: TButton
+    Position.X = 495
+    Position.Y = 310
+    Size.Width = 135
+    Size.Height = 40
+    Anchors = [akRight, akBottom]
+    Text = 'MENU'
+    OnClick = btnMenuClick
   end
 end

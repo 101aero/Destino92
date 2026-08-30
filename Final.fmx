@@ -1,37 +1,44 @@
 object frmFinal: TfrmFinal
   Caption = 'Destino 92 - Final'
-  ClientHeight = 640
-  ClientWidth = 360
+  ClientHeight = 360
+  ClientWidth = 640
+  FormFactor.Width = 640
+  FormFactor.Height = 360
   object lblTituloFinal: TLabel
-    Position.X = 20.000000000000000000
-    Position.Y = 80.000000000000000000
-    Size.Width = 325.000000000000000000
-    Size.Height = 60.000000000000000000
+    Position.X = 20
+    Position.Y = 25
+    Size.Width = 410
+    Size.Height = 45
     Text = 'FINAL'
-    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.Font.Size = 27
     TextSettings.HorzAlign = Center
   end
   object memFinal: TMemo
-    Position.X = 20.000000000000000000
-    Position.Y = 165.000000000000000000
-    Size.Width = 200.000000000000000000
-    Size.Height = 300.000000000000000000
+    Position.X = 20
+    Position.Y = 80
+    Size.Width = 410
+    Size.Height = 250
+    Anchors = [akLeft, akTop, akRight, akBottom]
     ReadOnly = True
+    WordWrap = True
+    TextSettings.Font.Size = 16
   end
   object btnReiniciar: TButton
-    Position.X = 235.000000000000000000
-    Position.Y = 220.000000000000000000
-    Size.Width = 110.000000000000000000
-    Size.Height = 46.000000000000000000
-    Text = 'JUGAR OTRA VEZ'
+    Position.X = 455
+    Position.Y = 205
+    Size.Width = 165
+    Size.Height = 48
+    Anchors = [akRight, akBottom]
+    Text = 'VOLVER A JUGAR'
     OnClick = btnReiniciarClick
   end
   object btnMenu: TButton
-    Position.X = 235.000000000000000000
-    Position.Y = 285.000000000000000000
-    Size.Width = 110.000000000000000000
-    Size.Height = 46.000000000000000000
-    Text = 'MENU'
+    Position.X = 455
+    Position.Y = 265
+    Size.Width = 165
+    Size.Height = 48
+    Anchors = [akRight, akBottom]
+    Text = 'MENU PRINCIPAL'
     OnClick = btnMenuClick
   end
 end

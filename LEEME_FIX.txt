@@ -1,0 +1,10 @@
+DESTINO 92 v6.1 - FIX DELPHI 12.1
+
+Corregido el error:
+FormFactor.Devices: Invalid property value
+
+Se ha eliminado FormFactor.Devices de los tres formularios.
+No es necesario para compilar el proyecto como FireMonkey y evita
+la incompatibilidad del valor [Desktop, Phone, Tablet] con Delphi 12.1.
+
+Abrir Destino92.dpr y probar primero en Windows.

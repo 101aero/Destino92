@@ -1,12 +1,21 @@
-DESTINO 92 - PROTOTIPO DELPHI 12.1 FIREMONKEY
+DESTINO 92 - VERSION 6 ANDROID
 
-Version con textos sin acentos para evitar problemas de codificacion.
-Los botones se colocan a la derecha y con menor tamano.
+Base: v5 validada en Windows.
 
-PRUEBA RECOMENDADA:
+Cambios:
+- Interfaz base 640x360 horizontal para telefono.
+- Formularios compatibles con Desktop, Phone y Tablet.
+- Botones grandes para uso tactil.
+- Controles anclados a derecha y parte inferior para adaptarse mejor a otras resoluciones.
+- Se conservan las 29 escenas y toda la logica de la v5.
+- Textos del juego sin acentos.
+
+PRUEBA RECOMENDADA
 1. Abrir Destino92.dpr en Delphi 12.1.
-2. Compilar primero para Windows.
-3. Probar las rutas de la aventura.
-4. Despues anadir Android como Target Platform y generar el APK.
+2. Probar primero Win32/Win64.
+3. Add Platform -> Android 64-bit.
+4. Seleccionar el telefono Android conectado por USB.
+5. Run.
 
-Los dibujos siguen como marcadores de texto. Se anadiran cuando la navegacion quede comprobada.
+IMPORTANTE
+Esta es la primera adaptacion movil. El siguiente paso puede sustituir el texto principal por una zona de ilustracion + dialogo y hotspots de aventura grafica.
